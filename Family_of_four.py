@@ -10,7 +10,7 @@ def put_family_in(n ,s):
     for i in range(1, n+1):
       thisdict.update({i:''})
       for x in col:
-        if str(i)+str(x) not in seats:
+        if str(i) + x not in seats:
           thisdict[i] = thisdict[i] + x
     print("Available row/seat: ", thisdict)
          
